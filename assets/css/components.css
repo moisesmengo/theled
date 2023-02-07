@@ -237,9 +237,12 @@ footer > h2 {
   footer > h2 {
     display: none !important;
   }
+  .main-products.bgcinza .title {
+    font-size: 30px;
+  }
   .fdesk {
     display: block;
-    flex: 1;
+    font-size: 24px !important;
   }
   header .container {
     display: flex !important;
@@ -275,18 +278,22 @@ footer > h2 {
     gap: 30px;
   }
   footer .container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
   }
   footer {
-    padding: 60px 0 0;
+    padding: 60px 0;
+    margin-top: 0;
   }
   .locals {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+  }
+
+  .bgcinza {
+    margin-bottom: 0;
   }
   footer h2 {
     font-size: 16px;
@@ -298,7 +305,7 @@ footer > h2 {
   }
   footer p,
   footer span {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
   .state {
     grid-template-columns: 20px 1fr;
@@ -306,9 +313,15 @@ footer > h2 {
   }
   .arealogo {
     flex: 1;
+    grid-column: -1/1;
   }
   .arealogo img {
     max-width: 225px !important;
+  }
+
+  .pst {
+    display: flex;
+    gap: 20px;
   }
 
   .tl_op {
