@@ -1,0 +1,486 @@
+#smartplayer#smartplayer#smartplayer .smartplayer-smartplay {
+  opacity: 0;
+}
+.banner {
+  position: relative;
+}
+.banner::after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100000000;
+  opacity: 0;
+  content: "";
+  top: 0;
+  left: 0;
+}
+video {
+  display: block;
+  width: 100%;
+}
+.banner video {
+  max-height: 300px;
+}
+.about {
+  margin: 30px 0;
+  padding: 30px 0;
+  background: linear-gradient(to right, #000 40%, #fff 30%);
+}
+.about .container {
+  padding-left: 20px;
+}
+.about p {
+  background: #fff;
+  display: inline;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.callservice {
+  display: flex;
+  justify-content: flex-end;
+  background: #fff;
+  box-shadow: inset 0 -100px #e3e3e3;
+}
+.area-servicec {
+  text-align: center;
+  background: url(../images/bgm-s.webp);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  padding: 20px;
+}
+.area-servicec * {
+  color: #fff;
+}
+.area-servicec p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.callproducts {
+  position: relative;
+}
+.bg-prod {
+  position: absolute;
+  top: 50%;
+  object-fit: cover;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.retang {
+  background: #e3e3e3;
+  display: block;
+  height: 80%;
+  position: absolute;
+  width: 85%;
+}
+.callproducts .swiper-slide img {
+  height: 180px;
+  object-fit: contain;
+  position: relative;
+}
+.callproducts .swiper-slide {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+  z-index: 10000;
+}
+.callproducts .call {
+  margin-top: 70px;
+}
+
+.callproducts span.swiper-pagination-bullet {
+  background: #767777;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+.callproducts .swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+.callcases {
+  background: #000;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+.callcases .call {
+  color: #fff;
+  margin-top: 0;
+}
+.svid .swiper-button-prev,
+.svid .swiper-rtl .swiper-button-next,
+.svid .swiper-button-next,
+.swiper-button-prev {
+  top: 30%;
+}
+.svid {
+  position: relative;
+}
+.svid .swiper-slide {
+  min-height: 260px;
+  color: #fff;
+}
+.svid .swiper-button-next,
+.swiper-button-prev {
+  color: #ffff !important;
+}
+.svid video {
+  max-width: 80%;
+  margin: 0 auto;
+  object-fit: cover;
+  position: relative;
+}
+.svid::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: url(../images/case-tela-inf.png) no-repeat;
+  background-size: contain;
+  height: 150px;
+  bottom: -20px;
+  z-index: 0;
+}
+
+.callclients {
+  margin: 0 20px !important;
+  background: url(../images/moldura-cases.png) no-repeat;
+  background-size: contain;
+  padding: 0 20px;
+  margin-top: 20px !important;
+  background-position: center;
+}
+.callclients .title {
+  margin-bottom: 30px;
+  position: relative;
+  left: -40px;
+}
+.callclients .container {
+  padding: 30px 0;
+}
+.scli .swiper-slide img {
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+.scli .swiper-slide img:hover {
+  filter: none;
+}
+.scli .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scli .swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+}
+.scli .swiper-slide {
+  margin-top: 0 !important;
+  padding: 0 !important;
+}
+.scli .swiper-button-next,
+.swiper-button-prev {
+  color: #d4d4d3 !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 30px !important;
+}
+
+.opinions {
+  background: #eeeeef;
+  margin-top: 30px;
+  padding: 60px 0 20px;
+}
+.opinions .container {
+  position: relative;
+  z-index: 100;
+}
+.opinions h2 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.commmetns .swiper-slide {
+  flex-direction: column !important;
+  padding: 0 0 0 20px;
+}
+.commmetns p {
+  margin-bottom: 30px;
+}
+.commmetns h3 {
+  font-weight: 500;
+}
+
+.commmetns .swiper-slide.swiper-slide-active {
+  padding-bottom: 40px;
+}
+.commmetns h4 {
+  font-weight: 400;
+}
+.commmetns .swiper-pagination-bullet {
+  background: #595959 !important;
+  opacity: 1;
+}
+.commmetns .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0 !important;
+}
+.commmetns .swiper-pagination-bullet-active {
+  background: #000 !important;
+}
+.commmetns .swiper-button-next:after,
+.commmetns .swiper-rtl .swiper-button-prev:after {
+  color: #000;
+}
+
+.opinions {
+  position: relative;
+}
+.mold {
+  position: absolute;
+  height: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.institution {
+  background: url(../images/moldura-video.png) no-repeat;
+  background-size: contain;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-position: center;
+}
+.institution .container {
+  padding: 60px 20px;
+}
+
+.mySwiper .swiper-slide {
+  display: grid;
+  text-align: center;
+}
+.nomeprod {
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.callcases .swiper-button-next:after,
+.callcases .swiper-rtl .swiper-button-prev:after {
+  color: #fff !important;
+}
+.callcases h2 {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.callproducts .swiper-button-next:after,
+.callproducts .swiper-button-prev:after {
+  color: #000;
+}
+
+@media (min-width: 500px) {
+  .bg-prod {
+    height: 90%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .container {
+    max-width: 1140px !important;
+  }
+  .banner video {
+    max-height: none;
+  }
+  .swiper-slide img {
+    height: 300px;
+  }
+  .svid::before,
+  .svid::after {
+    height: 180px;
+    z-index: 0;
+    left: 50%;
+    transform: translateX(-35%);
+  }
+}
+@media (min-width: 800px) {
+  /*  */
+
+  .callclients {
+    padding: 120px 0;
+    background: url(../images/ret.webp) no-repeat;
+    background-size: 1300px;
+    background-position: center;
+  }
+  .callclients .swiper-slide ::selection,
+  .scli .swiper-slide ::selection {
+    background: transparent;
+  }
+
+  .scli .swiper-button-next:after,
+  .scli .swiper-button-prev:after {
+    color: #000;
+    font-size: 40px !important;
+  }
+  .mold {
+    display: none;
+  }
+
+  .institution {
+    margin: 20px 0;
+    padding: 20px 0;
+  }
+  .about p {
+    font-size: 24px !important;
+  }
+
+  .opinions h2 {
+    font-size: 24px !important;
+    display: none;
+  }
+  .tl_op {
+    display: block !important;
+    text-align: center;
+    background: #fff;
+    padding-bottom: 30px;
+  }
+  .about {
+    margin: 50px 0 80px;
+    padding: 40px 0;
+  }
+  .area-servicec p {
+    text-align: center;
+    font-size: 16px !important;
+  }
+  .area-servicec .call,
+  .callproducts .call {
+    justify-content: flex-end;
+  }
+  .call {
+    font-size: 18px !important;
+  }
+  .area-servicec {
+    width: 50%;
+    padding: 30px;
+    background: url(../images/bg__.webp) no-repeat;
+    background-size: cover;
+  }
+  .bg-prod {
+    width: 100%;
+    object-fit: contain;
+  }
+  .callproducts .swiper-pagination-bullet-active {
+    background: rgb(79, 77, 77) !important;
+  }
+
+  .svid::before,
+  .svid::after {
+    display: none;
+  }
+  img.bg-prod {
+    display: none;
+  }
+
+  .institution {
+    margin: 50px 0;
+  }
+  .institution .container {
+    padding: 100px;
+  }
+  .retang {
+    width: 100%;
+    height: 85%;
+  }
+
+  .callproducts .swiper-button-next:after,
+  .callproducts .swiper-button-prev:after {
+    font-size: 60px !important;
+    color: #000;
+  }
+  .callcases {
+    padding: 100px 0 80px;
+  }
+  .callcases .call {
+    justify-content: flex-end;
+  }
+  .callcases h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    max-width: 300px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .casescontent {
+    display: flex;
+    align-items: center;
+  }
+
+  .casescontent .swiper-slide {
+    padding: 0 60px;
+    display: block;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+    position: relative;
+  }
+  .casescontent .swiper-slide::after {
+    content: url(../images/videodesc.webp);
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%;
+  }
+  .casescontent .swiper-slide video {
+    height: 100% !important;
+    display: block;
+    position: relative;
+    z-index: 100;
+    object-fit: cover;
+  }
+
+  .casescontent .swiper-button-next:after,
+  .casescontent .swiper-button-prev:after {
+    font-size: 60px !important;
+    color: #fff !important;
+  }
+
+  .opinions .container,
+  .commmetns h3,
+  .commmetns h4 {
+    text-align: center !important;
+  }
+
+  .commmetns .swiper-button-next:after,
+  .commmetns .swiper-button-prev:after {
+    font-size: 60px !important;
+    color: #000;
+  }
+
+  .about .container {
+    max-width: 800px !important;
+    padding-left: 0;
+  }
+
+  .opinions p {
+    font-size: 16px !important;
+    padding: 40px 80px 0 80px;
+  }
+  .opinions {
+    padding: 0 0 60px;
+  }
+}

@@ -1,0 +1,142 @@
+.scases img {
+  object-fit: cover !important;
+  width: 100%;
+  max-width: 100% !important;
+}
+.scases video {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.scases .swiper-slide {
+  padding: 0;
+}
+.scases .swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+.area-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+.area-logo img {
+  width: 120px;
+}
+
+.sub {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.sub::before {
+  content: "→";
+}
+.solution {
+  background: #e6e7e8;
+  box-shadow: inset 0 -125px #fff;
+  padding: 40px 0;
+  margin-top: 20px;
+}
+.solution p {
+  margin-bottom: 40px;
+}
+.solution .container {
+  position: relative;
+}
+.area-result {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+.result {
+  background: url(../images/bgp.webp) no-repeat;
+  background-size: cover;
+  padding: 20px 40px;
+  border-radius: 0 80px 80px 80px;
+  width: 88%;
+}
+.result * {
+  color: #fff;
+}
+.result p {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+@media (min-width: 800px) {
+  .cases {
+    display: grid;
+    gap: 30px;
+  }
+  .case p {
+    font-size: 16px !important;
+  }
+  .cases .swiper-slide img {
+    height: 100%;
+  }
+  .desk_grid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e6e7e8;
+  }
+  .area-logo {
+    margin-bottom: 40px;
+  }
+  .solution {
+    box-shadow: none;
+  }
+  .result {
+    position: absolute;
+    bottom: -65px;
+    left: 60%;
+    z-index: 100;
+    width: 100%;
+    max-width: 500px;
+  }
+  .case {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 190px;
+  }
+  .case:nth-child(even) {
+    grid-template-columns: 1fr 2fr;
+  }
+  .case:nth-child(even) .result {
+    left: inherit;
+    right: 60%;
+  }
+  .case:nth-child(odd) .desk_grid {
+    order: 1;
+  }
+  .case:nth-child(odd) .scases {
+    order: 2;
+  }
+  .solution {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .scases video {
+    object-fit: cover;
+  }
+
+  .desk_grid .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .case .scases {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}

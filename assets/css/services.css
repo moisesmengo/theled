@@ -1,0 +1,96 @@
+.service:nth-child(odd) {
+  background: linear-gradient(to right, #e6e7e8 40%, #fff 30%);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px inset #fff;
+}
+.service {
+  margin-bottom: 80px;
+}
+.service:nth-child(even) .title--2 {
+  right: inherit;
+  background: url(../images/faixa-uma-linha.png) no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+  background-position: right;
+}
+.service:nth-child(even) .title--2::before {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .service:nth-child(even) .title--2::before {
+    display: block;
+  }
+  .service:nth-child(even) .title--2 {
+    background-size: contain;
+  }
+}
+.title--2 {
+  display: flex;
+  position: relative;
+  right: -20%;
+  width: 80%;
+  margin-bottom: 40px;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  font-size: 24px;
+  background: url(../images/faixa-duas-linhas.png) no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.title--2::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(to right, #654e96, #da496e, #d6b855);
+  display: block;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+}
+.service .container > p {
+  margin-bottom: 30px;
+}
+.service li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+  .main-products {
+    margin-bottom: 60px;
+  }
+
+  .service .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+
+  .service .container p {
+    font-size: 16px !important;
+  }
+  .service .container > p {
+    text-align: center;
+  }
+
+  .service:nth-child(odd) {
+    background: linear-gradient(to right, #e6e7e8 50%, #fff 30%);
+  }
+  .service:nth-child(even) {
+    background: linear-gradient(to right, #fff 50%, #e6e7e8 30%);
+    box-shadow: 0 25px inset #fff;
+  }
+  .title--2 {
+    width: 70%;
+  }
+  .service:nth-child(odd) .title--2 {
+    right: -30%;
+  }
+}
