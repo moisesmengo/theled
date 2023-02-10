@@ -94,7 +94,7 @@
   }
   .result {
     position: absolute;
-    bottom: -65px;
+    bottom: -80px;
     left: 60%;
     z-index: 100;
     width: 100%;
@@ -102,10 +102,13 @@
   }
   .case {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 650px;
     margin-bottom: 190px;
   }
-
+  .case video {
+    height: 100%;
+    object-fit: cover;
+  }
   .case:nth-child(even) {
     grid-template-columns: 1fr 2fr;
   }
@@ -137,7 +140,6 @@
     height: 100%;
   }
   .case .swiper-slide.swiper-slide-active {
-    background: #e6e7e8;
     display: flex;
     align-items: center;
   }

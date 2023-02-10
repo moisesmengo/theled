@@ -61,36 +61,131 @@
   margin-bottom: 20px;
 }
 
+.service p.container {
+  display: none;
+}
+
 @media (min-width: 800px) {
   .main-products {
     margin-bottom: 60px;
   }
-
-  .service .container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+  .title--2,
+  .service:nth-child(even) .title--2 {
+    width: 100%;
+    text-align: center;
+    position: static;
+    justify-content: center;
+    background: none;
+    margin-bottom: 30px !important;
+    padding: 0;
+  }
+  .title--2::before {
+    display: none;
+  }
+  .service .container.c2 {
+    width: 100%;
+    max-width: 80% !important;
+    margin-left: auto;
+    margin-right: 0;
   }
 
-  .service .container p {
+  .service:nth-child(even) .container.c2 {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .container.c2 > p {
+    display: none;
+  }
+
+  .service p.container {
+    text-align: center;
+    display: block;
+    max-width: 900px !important;
+    margin: 0 auto 20px;
+    position: relative;
+    z-index: 100;
+  }
+  .service p {
     font-size: 16px !important;
   }
-  .service .container > p {
-    text-align: center;
+  .service:nth-child(odd) {
+    background: none;
+  }
+  .service:nth-child(even) .title--2::before {
+    display: none;
   }
 
-  .service:nth-child(odd) {
-    background: linear-gradient(to right, #e6e7e8 50%, #fff 30%);
+  .service ul {
+    display: flex;
+    background: #e6e7e8;
+    padding: 30px 120px;
+    gap: 30px;
+    border-radius: 150px 0 0 150px;
+    z-index: 100;
+    position: relative;
+    z-index: 500;
   }
-  .service:nth-child(even) {
-    background: linear-gradient(to right, #fff 50%, #e6e7e8 30%);
-    box-shadow: 0 25px inset #fff;
+  .service {
+    position: relative;
+    margin-bottom: 200px;
   }
-  .title--2 {
-    width: 70%;
+  .service::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 450px;
+    width: 100px;
+    top: 60px;
+    background: url(../images/aderecoodd.webp) no-repeat;
+    background-position: center;
+    z-index: 100;
+    background-size: contain;
   }
-  .service:nth-child(odd) .title--2 {
-    right: -30%;
+  .service::before {
+    content: "";
+    display: block;
+    width: 85%;
+    height: 200px;
+    background: url(../images/caseodd.webp) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    z-index: 0;
+  }
+
+  .service:nth-child(even)::after {
+    content: "";
+    position: absolute;
+    right: inherit;
+    left: 0;
+    height: 450px;
+    width: 100px;
+    background-position: center;
+    top: 60px;
+    background: url(../images/aderecoeven.webp) no-repeat;
+    z-index: 100;
+    background-size: contain;
+  }
+
+  .service:nth-child(even)::before {
+    right: inherit;
+    background: url(../images/caseevenn.webp) no-repeat;
+
+    left: 0;
+  }
+  .service:nth-child(even) ul {
+    border-radius: 0 150px 150px 0;
+  }
+  .service li {
+    margin-bottom: 0;
+    grid-template-columns: 1fr;
+    place-items: center;
+    text-align: center;
+  }
+  .service li img {
+    height: 40px;
+    object-fit: contain;
   }
 }

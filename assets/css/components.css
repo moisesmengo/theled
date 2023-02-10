@@ -221,7 +221,13 @@ footer > h2 {
 .bgcinza {
   background: #eeeeee;
 }
-
+footer p,
+footer span {
+  font-size: 16px !important;
+}
+.state h3 {
+  font-size: 18px;
+}
 @media (min-width: 800px) {
   .main-products p {
     margin-left: 40px;
@@ -242,7 +248,7 @@ footer > h2 {
   }
   .fdesk {
     display: block;
-    font-size: 24px !important;
+    font-size: 30px !important;
   }
   header .container {
     display: flex !important;
@@ -281,14 +287,15 @@ footer > h2 {
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 20px;
+    max-width: 90% !important;
   }
   footer {
     padding: 60px 0;
     margin-top: 0;
   }
   .locals {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: space-evenly;
     gap: 30px;
   }
 
@@ -301,12 +308,9 @@ footer > h2 {
     font-weight: 500 !important;
   }
   .state h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
-  footer p,
-  footer span {
-    font-size: 12px !important;
-  }
+
   .state {
     grid-template-columns: 20px 1fr;
     gap: 10px;
@@ -321,7 +325,8 @@ footer > h2 {
 
   .pst {
     display: flex;
-    gap: 20px;
+    justify-content: space-evenly;
+    gap: 30px;
   }
 
   .tl_op {
