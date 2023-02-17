@@ -36,7 +36,9 @@ video {
   line-height: 1.6;
   font-size: 20px;
 }
-
+.prod_call {
+  padding-top: 30px;
+}
 .callservice {
   display: flex;
   justify-content: flex-end;
@@ -80,10 +82,11 @@ video {
   width: 85%;
 }
 .callproducts .swiper-slide img {
-  height: 180px;
+  height: 280px;
   object-fit: contain;
   position: relative;
 }
+
 .callproducts .swiper-slide {
   display: flex;
   justify-content: center;
@@ -147,7 +150,10 @@ video {
   bottom: -20px;
   z-index: 0;
 }
-
+.casescontent .swiper-slide video,
+.institution video {
+  border-radius: 10px;
+}
 .callclients {
   margin: 0 20px !important;
   background: url(../images/moldura-cases.png) no-repeat;
@@ -214,6 +220,7 @@ video {
 }
 .commmetns p {
   margin-bottom: 30px;
+  text-align: center;
 }
 .commmetns h3 {
   font-weight: 500;
@@ -255,14 +262,14 @@ video {
 }
 
 .institution {
-  background: url(../images/moldura-video.png) no-repeat;
+  background: url(../images/moldura-video-desktop.webp) no-repeat;
   background-size: contain;
   margin-left: 15px;
   margin-right: 15px;
   background-position: center;
 }
 .institution .container {
-  padding: 60px 20px;
+  padding: 60px 0;
 }
 
 .mySwiper .swiper-slide {
@@ -319,7 +326,9 @@ video {
 }
 @media (min-width: 800px) {
   /*  */
-
+  .institution video {
+    border-radius: 15px;
+  }
   .callclients {
     padding: 120px 0;
     background: url(../images/ret.webp) no-repeat;
@@ -377,10 +386,17 @@ video {
     font-size: 18px !important;
   }
   .area-servicec {
-    width: 50%;
+    width: 60%;
     padding: 30px;
     background: url(../images/bg__.webp) no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 100;
+  }
+
+  .area-servicec p {
+    max-width: 100ch;
+    margin: 0 auto 40px;
   }
   .bg-prod {
     width: 100%;
@@ -395,7 +411,9 @@ video {
     display: none;
   }
   img.bg-prod {
-    display: none;
+    left: 0;
+    transform: translate3d(-25%, -50%, 0);
+    height: 120%;
   }
 
   .institution {
@@ -409,10 +427,27 @@ video {
     height: 85%;
   }
 
+  .callproducts {
+    background: #e3e3e3;
+    padding-bottom: 80px;
+  }
+  .callproducts .container {
+    padding-top: 60px;
+  }
+  .institution .container {
+    padding: 40px 20px;
+  }
+
   .callproducts .swiper-button-next:after,
   .callproducts .swiper-button-prev:after {
     font-size: 60px !important;
     color: #000;
+  }
+  .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-backface-hidden {
+    padding: 0 80px;
+  }
+  .prod_call {
+    padding-top: 50px;
   }
   .callcases {
     padding: 100px 0 80px;
@@ -424,7 +459,7 @@ video {
     font-size: 24px;
     line-height: 1.5;
     max-width: 300px;
-    margin-bottom: 0;
+    margin-bottom: 150px;
     text-align: left;
   }
   .casescontent {
@@ -433,7 +468,6 @@ video {
   }
 
   .casescontent .swiper-slide {
-    padding: 0 60px;
     display: block;
     min-height: 400px;
     display: flex;
@@ -443,13 +477,16 @@ video {
     position: relative;
   }
   .casescontent .swiper-slide::after {
-    content: url(../images/videodesc.webp);
+    content: url(../images/videodesc.png);
     position: absolute;
     bottom: 0 !important;
+    left: 50%;
+    transform: translateX(-45%);
     width: 100%;
   }
   .casescontent .swiper-slide video {
     height: 100% !important;
+    border-radius: 15px;
     display: block;
     position: relative;
     z-index: 100;

@@ -92,6 +92,18 @@ header .container {
   font-weight: 500;
   gap: 5px;
   text-align: center;
+  background: linear-gradient(to right, #f26c40 0%, #c95182 50%, #937fbb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.call.branco {
+  background: none;
+  font-weight: normal;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: initial;
 }
 
 .title {
@@ -153,7 +165,7 @@ footer span {
 footer > h2 {
   font-size: 20px;
   padding-bottom: 40px;
-  font-weight: 500;
+  font-weight: 300 !important;
 }
 .arealogo {
   display: flex;
@@ -344,5 +356,8 @@ footer span {
   }
   .sociais a {
     padding: 5px;
+  }
+  .call {
+    font-size: 20px !important;
   }
 }
