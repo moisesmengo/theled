@@ -87,7 +87,7 @@ header .container {
 .call {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   font-size: 18px;
   font-weight: 500;
   gap: 5px;
