@@ -41,10 +41,11 @@
 .difs {
   background: url(../images/bgp.webp) no-repeat;
   background-size: cover;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   text-align: center;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
   position: relative;
   padding: 10px 40px;
   margin-top: 20px;
@@ -120,7 +121,9 @@
   }
 
   .difs {
-    max-width: 400px;
+    max-width: 600px;
+    width: fit-content;
+    min-width: 400px;
     position: relative;
     bottom: 60px;
     right: -40%;

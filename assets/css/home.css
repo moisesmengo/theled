@@ -34,6 +34,7 @@ video {
   background: #fff;
   display: inline;
   line-height: 1.6;
+  text-transform: uppercase;
   font-size: 20px;
 }
 .prod_call {
@@ -174,7 +175,7 @@ video {
 }
 
 .callclients .title {
-  margin: 30px 20px;
+  margin: 0 20px;
   position: relative;
   z-index: 1000;
 }
@@ -187,18 +188,12 @@ video {
   height: auto;
   filter: grayscale(100%);
   transition: filter 0.5s;
-  width: 90px;
+  width: 56px;
 }
 .scli .swiper-slide img:hover {
   filter: none;
 }
-.scli .swiper-slide {
-  display: flex;
-  align-items: center;
 
-  margin: 0 !important;
-  padding: 0 !important;
-}
 .scli .swiper-wrapper {
   display: flex !important;
   flex-direction: row !important;
@@ -207,10 +202,7 @@ video {
 .scli .swiper-button-prev {
   top: 40% !important;
 }
-.scli .swiper-slide {
-  margin-top: 0 !important;
-  padding: 0 !important;
-}
+
 .scli .swiper-button-next,
 .scli .swiper-button-prev {
   color: #d4d4d3 !important;
@@ -284,7 +276,7 @@ video {
 .scli::before {
   content: "";
   display: block;
-  width: 80px;
+  width: 50px;
   height: 100%;
   background: #fff;
   position: absolute;
@@ -343,6 +335,32 @@ video {
   color: #000;
 }
 
+.swiper.scli {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.scli .swiper-slide {
+  text-align: center;
+
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scli .swiper-slide {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.swiper-grid-column > .swiper-wrapper {
+  padding: 0 40px !important;
+}
+
 @media (min-width: 500px) {
   .bg-prod {
     height: 90%;
@@ -367,6 +385,9 @@ video {
   }
 }
 @media (min-width: 800px) {
+  .swiper-grid-column > .swiper-wrapper {
+    padding: 0 !important;
+  }
   /*  */
   .institution video {
     border-radius: 15px;
@@ -385,14 +406,14 @@ video {
     position: absolute;
     left: 50%;
     object-fit: contain;
-    height: 600px;
+    height: auto;
     z-index: 10;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
   }
 
   .callclients .container {
-    max-width: 1038px !important;
+    max-width: 896 !important;
   }
   .callclients .swiper-slide ::selection,
   .scli .swiper-slide ::selection {
@@ -605,15 +626,13 @@ video {
     z-index: 10000 !important;
   }
 
-  .scli .swiper-slide {
-    justify-content: center;
-  }
-
   .scli .swiper-slide img {
     width: 142px;
     margin-bottom: 30px;
   }
-
+  .scli .swiper-slide {
+    justify-content: start;
+  }
   .callclients .title {
     margin-bottom: 60px;
   }

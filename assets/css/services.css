@@ -141,6 +141,7 @@
     z-index: 100;
     position: relative;
     z-index: 500;
+    justify-content: center;
   }
   .service {
     position: relative;
@@ -195,13 +196,12 @@
     border-radius: 0 150px 150px 0;
   }
   .service li {
-    margin-bottom: 0;
-    grid-template-columns: 1fr;
-    place-items: center;
+    display: block;
     text-align: center;
   }
   .service li img {
     height: 40px;
+    margin: 0 auto 20px;
     object-fit: contain;
   }
 }
