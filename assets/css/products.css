@@ -47,7 +47,7 @@
   gap: 20px;
   justify-content: center;
   position: relative;
-  padding: 10px 40px;
+  padding: 10px 30px;
   margin-top: 20px;
   border-radius: 0 60px 60px;
 }
@@ -63,7 +63,10 @@
   max-width: 40px !important;
   margin: 0 auto 10px auto;
 }
-
+.item {
+  width: 100%;
+  max-width: 60px;
+}
 .desk,
 .img_desk {
   display: none !important;
@@ -79,7 +82,7 @@
 
   .product {
     padding: 0;
-    box-shadow: 0 -134px #fff inset, 0 50px #fff inset;
+    box-shadow: 0 -125px #fff inset, 0 50px #fff inset;
   }
   .desk {
     display: block;
@@ -96,7 +99,9 @@
     margin: initial;
     margin-left: auto;
   }
-
+  .sprod img {
+    margin: 0 auto;
+  }
   .img_desk {
     display: block !important;
   }
@@ -121,11 +126,12 @@
   }
 
   .difs {
-    max-width: 600px;
-    width: fit-content;
     min-width: 400px;
+    width: max-content;
+    max-width: 640px;
     position: relative;
     bottom: 60px;
     right: -40%;
+    flex-wrap: nowrap;
   }
 }

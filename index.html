@@ -9,11 +9,10 @@
       name="description"
       content="We are the largest and most creative interactive technology company in the country, specializing in LED panel solutions. We offer a complete service, from project development to production and content management, with qualified professionals and high-quality products. We offer purchase and rental options."
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="preload" as="assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="preload" as="assets/css/swipper.css" />
+    <link rel="stylesheet" href="assets/css/swipper.css" />
     <link
       rel="shortcut icon"
       href="assets/images/icon.png"
@@ -23,15 +22,23 @@
   <body>
     <header>
       <div class="container">
-        <a href="index.html" class="logo">
+        <a href="" class="logo">
           <img src="assets/images/logo.webp" alt="The Led" />
         </a>
 
         <div class="area_menu">
           <div class="flags">
-            <a href=""><img src="assets/images/bandeira-eua.png" alt="us" /></a>
-            <!-- <a href=""><img src="assets/images/bandeira-es.png" alt="es" /></a>
-            <a href=""><img src="assets/images/bandeira-br.png" alt="br" /></a> -->
+            <div class="area__imgs">
+              <a href=""
+                ><img src="assets/images/bandeira-eua.png" alt="us"
+              /></a>
+              <a href="/es/"
+                ><img src="assets/images/bandeira-es.png" alt="es"
+              /></a>
+              <a href="/br/"
+                ><img src="assets/images/bandeira-br.png" alt="br"
+              /></a>
+            </div>
           </div>
           <a href="mailto:email@email.com" class="email">
             <img src="assets/images/e-mail.png" alt="email" />
@@ -54,10 +61,10 @@
         </div>
 
         <ul class="items_menu big">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">products</a></li>
-          <li><a href="services.html">services</a></li>
-          <li><a href="cases.html">cases</a></li>
+          <li><a href="products/">Products</a></li>
+          <li><a href="services/">services</a></li>
+          <li><a href="cases/">cases</a></li>
+          <li><a href="mailto:contato@">CONTACT US</a></li>
         </ul>
 
         <div class="sociais">
@@ -137,7 +144,7 @@
 
     <nav class="menu">
       <div class="header_menu">
-        <a class="logo" href="index.html">
+        <a class="logo" href="">
           <img src="assets/images/logo-menu.png" alt="The Led" />
         </a>
 
@@ -145,10 +152,10 @@
       </div>
 
       <ul class="items_menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="products.html">products</a></li>
-        <li><a href="services.html">services</a></li>
-        <li><a href="cases.html">cases</a></li>
+        <li><a href="products">products</a></li>
+        <li><a href="services">services</a></li>
+        <li><a href="cases">cases</a></li>
+        <li><a href="mailto:contato@contato">CONTACT US</a></li>
       </ul>
     </nav>
 
@@ -164,8 +171,12 @@
     <section class="about">
       <div class="container">
         <p>
-          WE ARE THE BIGGER AND MORE CREATIVE TECHNOLOGY COMPANY INTERACTIVE,
-          SPECIALIZED IN COUNTRY LED PANELS SOLUTIONS.
+          We are a visual and digital communication company, specialized in
+          solutions for led panels. Our headquarters are in Brazil, but you can
+          find us in Europe, the USA, China and South America. <br />
+          Newness has been part of our DNA in these 12 years of history. We are
+          ready to understand your business’ challenges, making them
+          opportunities for your growth.
         </p>
       </div>
     </section>
@@ -179,7 +190,7 @@
           broadcast and residential segments.
         </p>
 
-        <a href="" class="call branco"
+        <a href="services.html" class="call branco"
           ><svg
             width="21"
             height="24"
@@ -199,15 +210,15 @@
               </clipPath>
             </defs>
           </svg>
-          Learn more about our services
+          Get to know more about our services.
         </a>
       </div>
     </section>
 
     <section class="callproducts">
       <img
-        src="assets/images/telas-produtos-home.webp"
-        class="bg-prod"
+        data-src="assets/images/telas-produtos-home.webp"
+        class="bg-prod lazyload"
         alt="led"
       />
       <div class="retang"></div>
@@ -215,28 +226,52 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="assets/images/01.webp" alt="product" />
+              <img
+                data-src="assets/images/01.webp"
+                class="lazyload"
+                alt="product"
+              />
               <h2 class="nomeprod">TheWall</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/2.webp" alt="product" />
+              <img
+                data-src="assets/images/2.webp"
+                alt="product"
+                class="lazyload"
+              />
               <h2 class="nomeprod">TheWall</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/03.webp" alt="product" />
+              <img
+                data-src="assets/images/03.webp"
+                alt="product"
+                class="lazyload"
+              />
               <h2 class="nomeprod">TheWall</h2>
             </div>
 
             <div class="swiper-slide">
-              <img src="assets/images/01.webp" alt="product" />
+              <img
+                data-src="assets/images/01.webp"
+                class="lazyload"
+                alt="product"
+              />
               <h2 class="nomeprod">TheWall</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/2.webp" alt="product" />
+              <img
+                data-src="assets/images/2.webp"
+                class="lazyload"
+                alt="product"
+              />
               <h2 class="nomeprod">TheWall</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/03.webp" alt="product" />
+              <img
+                class="lazyload"
+                data-src="assets/images/03.webp"
+                alt="product"
+              />
               <h2 class="nomeprod">TheWall</h2>
             </div>
           </div>
@@ -270,7 +305,7 @@
               </clipPath>
             </defs>
           </svg>
-          Discover the complete product line
+          GET TO KNOW OUR PRODUCT LINE
         </a>
       </div>
     </div>
@@ -278,7 +313,7 @@
     <section class="callcases">
       <div class="container">
         <div class="casescontent">
-          <h2>CONFIRA ALGUNS DOS SUCESSOS DE NOSSOS CLIENTES:</h2>
+          <h2>CHECK OUT SOME OF OUR CLIENTS’ SUCCESS</h2>
           <div class="swiper svid">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -304,7 +339,7 @@
             <div class="swiper-button-prev"></div>
           </div>
         </div>
-        <a href="" class="call"
+        <a href="products.html" class="call"
           ><svg
             width="21"
             height="24"
@@ -324,7 +359,7 @@
               </clipPath>
             </defs>
           </svg>
-          see other cases
+          FIGURE OTHER CASES OUT
         </a>
       </div>
     </section>
@@ -360,6 +395,12 @@
 
             <div class="swiper-slide">
               <img
+                src="assets/images/clients/LOGO_IPIRANGA.webp"
+                alt="Ipiranga "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
                 src="assets/images/clients/LOGO_PEUGEOT.webp"
                 alt="Peugeot"
               />
@@ -372,18 +413,6 @@
             </div>
             <div class="swiper-slide">
               <img src="assets/images/clients/LOGO_NESTLE.webp" alt="Nestle " />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/images/clients/LOGO_DELL.webp" alt="Dell " />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/images/clients/LOGO_CeA.webp" alt="cea " />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="assets/images/clients/LOGO_IPIRANGA.webp"
-                alt="Ipiranga "
-              />
             </div>
 
             <div class="swiper-slide">
@@ -404,6 +433,12 @@
             <div class="swiper-slide">
               <img src="assets/images/clients/LOGO_IBM.webp" alt="IBM " />
             </div>
+            <div class="swiper-slide">
+              <img src="assets/images/clients/LOGO_DELL.webp" alt="Dell " />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/clients/LOGO_CeA.webp" alt="cea " />
+            </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -413,36 +448,90 @@
 
     <section class="opinions">
       <img
-        src="assets/images/moldura-opinioes.png"
+        data-src="assets/images/moldura-opinioes.png"
         alt="moudura"
-        class="mold"
+        class="mold lazyload"
       />
-      <h2 class="tl_op">Know the opinion of our customers</h2>
+      <h2 class="tl_op">HAVE A LOOK AT SOME OF OUR CLIENTS SUCCESS’ CASES:</h2>
 
       <div class="container">
-        <h2>Know the opinion of our customers</h2>
+        <h2>HAVE A LOOK AT SOME OF OUR CLIENTS SUCCESS’ CASES:</h2>
 
         <div class="swiper commmetns">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                consectetur magnam porro minima nostrum, dolorum explicabo vero
-                mollitia asperiores at laudantium? Laborum earum omnis
-                perspiciatis aliquid numquam, consectetur id. Eos.
+                “We decided to get a led panel due its technology, innovation
+                and sustainability. We had chosen a TheLED Panel because it’s a
+                led’s market benchmark. This partnership led us to great results
+                in all its stages: negotiation, service, installation and
+                maintenance.”
               </p>
 
-              <h3 class="name">Lorem, ipsum dolor.</h3>
-              <h4 class="office">Office</h4>
+              <h3 class="name">Elessandro Lemos</h3>
+              <h4 class="office">Natural da Terra Manager</h4>
             </div>
             <div class="swiper-slide">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id am,
-                consectetur id. Eos.
+                “We have the Digital Signage Solution of The Led Group in our
+                shop’s facade. The elements applied there call the client’s
+                attention even though they are distant”
               </p>
 
-              <h3 class="name">Lorem, ipsum dolor.</h3>
-              <h4 class="office">Office 2</h4>
+              <h3 class="name">Julio Tanako</h3>
+              <h4 class="office">CEO KT Retailing</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                “As soon as we opened our new store, we had a fascinating
+                surprise. Our customers and collaborators were dazzled about the
+                new features of our shop. The cashier area with two stunning
+                panels provided a brilliant entrance”
+              </p>
+
+              <h3 class="name">Lisete Gomes</h3>
+              <h4 class="office">Riachuelo Manager</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                “The store is amazing! The facade is fantastically flashy. The
+                TheLED panels bring all the technological background to the
+                future concept we need in Riachuelo”
+              </p>
+
+              <h3 class="name">Stephanie Monteiro</h3>
+              <h4 class="office">Riachuelo Manager</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                “Since the installation of the panels in our showcases, the
+                feedback from our teams and costumers has been being brilliant!
+                The moving image is such an attractive feature that enthuses the
+                eyes, which naturally attracts the people. Our teams are so
+                excited that they do not want us to take the led panels out
+                anymore.”
+              </p>
+
+              <h3 class="name">Ariela Silva</h3>
+              <h4 class="office">
+                Visual Merchandasing Manager of Levis Morumbi Store
+              </h4>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                “Nowadays, customers behave in a differente way when shopping. 5
+                years ago, for example, the customer used to come 5 times to the
+                showroom before closing a deal. Now, they come just once. The
+                digitalization has the crucial role of giving more concentrated
+                information in a short period of time.”
+              </p>
+
+              <h3 class="name">Roberto Gaspareti</h3>
+              <h4 class="office">Mercedes-Benz Development Senior Manager</h4>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -537,10 +626,10 @@
       </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script async src="assets/js/main.js"></script>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/slides.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -573,10 +662,11 @@
 
       var swiper3 = new Swiper(".scli", {
         slidesPerView: 4,
+
         grid: {
           rows: 2,
         },
-        spaceBetween: 25,
+        spaceBetween: 0,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -591,8 +681,8 @@
             },
           },
           "@1.50": {
-            slidesPerView: 6,
-            spaceBetween: 20,
+            slidesPerView: 4,
+            spaceBetween: 25,
             grid: {
               rows: 2,
             },

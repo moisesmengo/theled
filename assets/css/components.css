@@ -27,10 +27,38 @@ header .container {
   justify-content: flex-end;
   gap: 20px;
 }
+.flags {
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  width: 31px;
+  cursor: pointer;
+}
+.flags.ativo {
+  overflow: auto;
+  height: 60px;
+  z-index: 100;
+  top: 20px;
+}
+
+.flags::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flags.ativo::after {
+  display: none;
+}
 .flags img,
 .email img {
   height: 20px;
   object-fit: contain;
+  width: 100%;
 }
 .mobile,
 .email {

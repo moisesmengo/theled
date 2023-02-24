@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,32 +9,39 @@
       name="description"
       content="We are the largest and most creative interactive technology company in the country, specializing in LED panel solutions. We offer a complete service, from project development to production and content management, with qualified professionals and high-quality products. We offer purchase and rental options."
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="preload" as="../../assets/css/style.min.css" />
+    <link rel="stylesheet" href="../../assets/css/style.min.css" />
+    <link rel="preload" as="../../assets/css/swipper.css" />
+    <link rel="stylesheet" href="../../assets/css/swipper.css" />
     <link
       rel="shortcut icon"
-      href="assets/images/icon.png"
+      href="../../assets/images/icon.png"
       type="image/x-icon"
     />
   </head>
   <body>
     <header>
       <div class="container">
-        <a href="index.html" class="logo">
-          <img src="assets/images/logo.webp" alt="The Led" />
+        <a href="../" class="logo">
+          <img src="../../assets/images/logo.webp" alt="The Led" />
         </a>
 
         <div class="area_menu">
           <div class="flags">
-            <a href=""><img src="assets/images/bandeira-eua.png" alt="us" /></a>
-            <!-- <a href=""><img src="assets/images/bandeira-es.png" alt="es" /></a>
-            <a href=""><img src="assets/images/bandeira-br.png" alt="br" /></a> -->
+            <div class="area__imgs">
+              <a href=""
+                ><img src="../../assets/images/bandeira-es.png" alt="es"
+              /></a>
+              <a href="../../br/"
+                ><img src="../../assets/images/bandeira-br.png" alt="br"
+              /></a>
+              <a href="../../"
+                ><img src="../../assets/images/bandeira-eua.png" alt="us"
+              /></a>
+            </div>
           </div>
           <a href="mailto:email@email.com" class="email">
-            <img src="assets/images/e-mail.png" alt="email" />
+            <img src="../../assets/images/e-mail.png" alt="email" />
           </a>
 
           <button class="mobile">
@@ -54,10 +61,10 @@
         </div>
 
         <ul class="items_menu big">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">products</a></li>
-          <li><a href="services.html">services</a></li>
-          <li><a href="cases.html">cases</a></li>
+          <li><a href="../productos/">productos</a></li>
+          <li><a href="../servicios/">servicios</a></li>
+          <li><a href="../cases/">cases</a></li>
+          <li><a href="mailto:contato@">contacto</a></li>
         </ul>
 
         <div class="sociais">
@@ -134,171 +141,164 @@
         </div>
       </div>
     </header>
+
     <nav class="menu">
       <div class="header_menu">
-        <a class="logo" href="index.html">
-          <img src="assets/images/logo-menu.png" alt="The Led" />
+        <a class="logo" href="../">
+          <img src="../../assets/images/logo-menu.png" alt="The Led" />
         </a>
 
         <button class="close">X</button>
       </div>
 
       <ul class="items_menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="products.html">products</a></li>
-        <li><a href="services.html">services</a></li>
-        <li><a href="cases.html">cases</a></li>
+        <li><a href="../productos/">productos</a></li>
+        <li><a href="../servicios/">servicios</a></li>
+        <li><a href="../cases/">cases</a></li>
+        <li><a href="mailto:contato@">contacto</a></li>
       </ul>
     </nav>
 
     <main class="main-products">
       <img
-        src="assets/images/moldura-lateral.png"
+        src="../../assets/images/moldura-lateral.png"
         class="mold-main"
         alt="moldura"
       />
       <div class="container">
-        <h2 class="title">Products</h2>
-        <p>We have digital solutions for the most diverse business segments</p>
+        <h2 class="title">Cases</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quidem
+          laboriosam tempora fugiat animi.
+        </p>
       </div>
     </main>
 
-    <section class="products">
-      <div class="product">
-        <h2 class="title desk">TheWall</h2>
-
-        <div class="swiper sprod">
+    <section class="cases">
+      <div class="case">
+        <div class="swiper scases">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="assets/images/products/p1.webp" alt="product" />
+              <img src="../../assets/images/prancheta01.webp" alt="case" />
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/products/p1b.webp" alt="product" />
+              <video
+                loop
+                autoplay
+                muted
+                controls
+                src="../../assets/videos/NBA_V2910_TEASER_ALTACOMLOGOv2910.mp4"
+              ></video>
             </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
 
-        <div class="container">
-          <h2 class="title td_">TheWall</h2>
+        <div class="desk_grid">
+          <div class="container">
+            <div class="area-logo">
+              <img src="../../assets/images/nba.png" alt="logo" />
+            </div>
 
-          <div class="area-desc">
-            <img
-              src="assets/images/products/p1.webp"
-              alt="product"
-              class="img_desk"
-            />
-
-            <ul>
-              <li>Can be installed without the need for other structures;</li>
-              <li>Permite troca de resolução mesmo depois de instalado;</li>
-              <li>
-                Não compromete o espaço onde é instalado, graças a sua espessura
-                de 4,6cm;
-              </li>
-              <li>Fácil instalação e manutenção;</li>
-              <li>Manutenção 100% frontal.</li>
-            </ul>
-
-            <img
-              src="assets/images/products/p1b.webp"
-              alt="product"
-              class="img_desk i2"
-            />
+            <div class="challenge">
+              <h3 class="sub">Desafio: Loja Experiência</h3>
+              <p>
+                O objetivo da empresa era criar, para o primeiro ponto físico da
+                marca NBA no Brasil, uma loja experiência, cujos clientes
+                pudessem mergulhar no esporte verdadeiramente. A loja com 2 mil
+                m², seria a segunda maior do mundo.
+              </p>
+            </div>
           </div>
 
-          <div class="difs">
-            <div class="item">
-              <img src="assets/images/icon-instalacao.png" alt="installation" />
-              <span>simple installation</span>
+          <div class="solution">
+            <div class="container">
+              <h3 class="sub">Solução</h3>
+              <p>
+                Foram instalados 27 painéis de LED para compor o projeto
+                arquitetônico da NBA. Os painéis dão vida para a fachada da
+                loja, compõem a cenografia, contam histórias dos ídolos NBA e
+                ainda transmitem jogos. Uma verdadeira imersão!
+              </p>
             </div>
-            <div class="item">
-              <img src="assets/images/icon-manutencao.png" alt="MAINTENANCE" />
-              <span>MAINTENANCE Easy</span>
-            </div>
-            <div class="item">
-              <img src="assets/images/icon-tamanho.png" alt="size" />
-              <span>slim size</span>
+
+            <div class="area-result">
+              <div class="result">
+                <h3 class="sub">Resultado</h3>
+                <p>
+                  Com a realização deste mega projeto, conseguimos compor a
+                  Comunicação Visual Digital da NBA Store com a mais moderna
+                  tecnologia, e ainda proporcionamos ao público uma experiência
+                  imersiva única.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="product">
-        <h2 class="title desk">TheWall</h2>
-
-        <div class="swiper sprod">
+      <div class="case">
+        <div class="swiper scases">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="assets/images/products/p1.webp" alt="product" />
+              <img src="../../assets/images/prancheta01.webp" alt="case" />
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/products/p1b.webp" alt="product" />
+              <video
+                controls
+                loop
+                autoplay
+                muted
+                src="../../assets/videos/THE-LED-Infinitas-Possibilidades.mp4"
+              ></video>
             </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
 
-        <div class="container">
-          <h2 class="title td_">TheWall</h2>
+        <div class="desk_grid">
+          <div class="container">
+            <div class="area-logo">
+              <img
+                src="../../assets/images/Placeholder_view_vector.png"
+                alt="logo"
+              />
+            </div>
 
-          <div class="area-desc">
-            <img
-              src="assets/images/products/p1.webp"
-              alt="product"
-              class="img_desk"
-            />
-
-            <ul>
-              <li>Can be installed without the need for other structures;</li>
-              <li>Permite troca de resolução mesmo depois de instalado;</li>
-              <li>
-                Não compromete o espaço onde é instalado, graças a sua espessura
-                de 4,6cm;
-              </li>
-              <li>Fácil instalação e manutenção;</li>
-              <li>Manutenção 100% frontal.</li>
-            </ul>
-
-            <img
-              src="assets/images/products/p1b.webp"
-              alt="product"
-              class="img_desk i2"
-            />
+            <div class="challenge">
+              <h3 class="sub">challenge</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laudantium impedit explicabo quas magni repellat illo quaerat ut
+                quisquam error harum.
+              </p>
+            </div>
           </div>
 
-          <div class="difs">
-            <div class="item">
-              <img src="assets/images/icon-instalacao.png" alt="installation" />
-              <span>simple installation</span>
+          <div class="solution">
+            <div class="container">
+              <h3 class="sub">solucion</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                enim soluta modi tempore deserunt, blanditiis nostrum ab optio
+                doloremque explicabo voluptatum quod porro voluptatem architecto
+                provident inventore excepturi repellendus a.
+              </p>
             </div>
-            <div class="item">
-              <img src="assets/images/icon-manutencao.png" alt="MAINTENANCE" />
-              <span>MAINTENANCE Easy</span>
-            </div>
-            <div class="item">
-              <img src="assets/images/icon-tamanho.png" alt="size" />
-              <span>slim size</span>
+
+            <div class="area-result">
+              <div class="result">
+                <h3 class="sub">result</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores consequuntur qui, amet adipisci ratione minus.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="main-products bgcinza">
-      <img
-        src="assets/images/moldura-lateral.png"
-        class="mold-main"
-        alt="moldura"
-      />
-      <div class="container">
-        <h2 class="title">Title</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
-          ullam pariatur ipsum tempora, distinctio debitis?
-        </p>
       </div>
     </section>
 
@@ -311,7 +311,7 @@
             <h2>Brasil</h2>
 
             <div class="state">
-              <img src="assets/images/local.webp" alt="local" />
+              <img src="../../assets/images/local.webp" alt="local" />
 
               <div>
                 <h3>São Paulo</h3>
@@ -328,7 +328,7 @@
 
             <div class="pst">
               <div class="state">
-                <img src="assets/images/local.webp" alt="local" />
+                <img src="../../assets/images/local.webp" alt="local" />
 
                 <div>
                   <h3>Porto</h3>
@@ -340,7 +340,7 @@
               </div>
 
               <div class="state">
-                <img src="assets/images/local.webp" alt="local" />
+                <img src="../../assets/images/local.webp" alt="local" />
 
                 <div>
                   <h3>Lisboa</h3>
@@ -357,7 +357,7 @@
             <h2>EUA</h2>
 
             <div class="state">
-              <img src="assets/images/local.webp" alt="local" />
+              <img src="../../assets/images/local.webp" alt="local" />
 
               <div>
                 <h3>Orlando</h3>
@@ -370,18 +370,18 @@
           </div>
         </div>
         <div class="arealogo">
-          <img src="assets/images/logofooter.webp" alt="The Led" />
+          <img src="../../assets/images/logofooter.webp" alt="The Led" />
         </div>
       </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script async src="../../assets/js/main.js"></script>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/slides.js"></script>
 
     <script>
-      var swiper = new Swiper(".sprod", {
+      var swiper = new Swiper(".scases", {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

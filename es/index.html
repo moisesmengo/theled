@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The LED: led panel solution</title>
+    <meta
+      name="description"
+      content="We are the largest and most creative interactive technology company in the country, specializing in LED panel solutions. We offer a complete service, from project development to production and content management, with qualified professionals and high-quality products. We offer purchase and rental options."
+    />
+    <link rel="preload" as="../assets/css/style.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.min.css" />
+    <link rel="preload" as="../assets/css/swipper.css" />
+    <link rel="stylesheet" href="../assets/css/swipper.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="" class="logo">
+          <img src="../assets/images/logo.webp" alt="The Led" />
+        </a>
+
+        <div class="area_menu">
+          <div class="flags">
+            <div class="area__imgs">
+              <a href=""
+                ><img src="../assets/images/bandeira-es.png" alt="es"
+              /></a>
+              <a href="../../br/"
+                ><img src="../assets/images/bandeira-br.png" alt="br"
+              /></a>
+              <a href="../"
+                ><img src="../assets/images/bandeira-eua.png" alt="us"
+              /></a>
+            </div>
+          </div>
+          <a href="mailto:email@email.com" class="email">
+            <img src="../assets/images/e-mail.png" alt="email" />
+          </a>
+
+          <button class="mobile">
+            <svg
+              width="40"
+              height="20"
+              viewBox="0 0 60 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 40H60V33.3333H0V40ZM0 23.3333H60V16.6667H0V23.3333ZM0 0V6.66667H60V0H0Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <ul class="items_menu big">
+          <li><a href="productos/">productos</a></li>
+          <li><a href="servicios/">servicios</a></li>
+          <li><a href="cases/">cases</a></li>
+          <li><a href="mailto:contato@">contacto</a></li>
+        </ul>
+
+        <div class="sociais">
+          <a href=""
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 12.5313C25 5.61404 19.4 0 12.5 0C5.6 0 0 5.61404 0 12.5313C0 18.5965 4.3 23.6466 10 24.812V16.2907H7.5V12.5313H10V9.3985C10 6.97995 11.9625 5.01253 14.375 5.01253H17.5V8.77193H15C14.3125 8.77193 13.75 9.33584 13.75 10.0251V12.5313H17.5V16.2907H13.75V25C20.0625 24.3734 25 19.0351 25 12.5313Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href=""
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 7.17593C11.447 7.17593 10.4176 7.48818 9.5421 8.07319C8.66656 8.65821 7.98416 9.48972 7.5812 10.4626C7.17823 11.4354 7.0728 12.5059 7.27823 13.5387C7.48366 14.5714 7.99073 15.5201 8.73531 16.2647C9.4799 17.0093 10.4286 17.5163 11.4613 17.7218C12.4941 17.9272 13.5646 17.8218 14.5374 17.4188C15.5103 17.0158 16.3418 16.3334 16.9268 15.4579C17.5118 14.5824 17.8241 13.553 17.8241 12.5C17.8241 11.088 17.2631 9.73377 16.2647 8.73531C15.2662 7.73685 13.912 7.17593 12.5 7.17593ZM12.5 15.0463C11.9964 15.0463 11.5041 14.897 11.0854 14.6172C10.6666 14.3374 10.3403 13.9397 10.1475 13.4744C9.95481 13.0092 9.90438 12.4972 10.0026 12.0032C10.1009 11.5093 10.3434 11.0556 10.6995 10.6995C11.0556 10.3434 11.5093 10.1009 12.0032 10.0026C12.4972 9.90438 13.0092 9.95481 13.4744 10.1475C13.9397 10.3403 14.3374 10.6666 14.6172 11.0854C14.897 11.5041 15.0463 11.9964 15.0463 12.5C15.0433 13.1744 14.774 13.8203 14.2971 14.2971C13.8203 14.774 13.1744 15.0433 12.5 15.0463ZM18.0556 0H6.94444C5.10266 0 3.33632 0.731645 2.03398 2.03398C0.731645 3.33632 0 5.10266 0 6.94444V18.0556C0 19.8973 0.731645 21.6637 2.03398 22.966C3.33632 24.2684 5.10266 25 6.94444 25H18.0556C19.8973 25 21.6637 24.2684 22.966 22.966C24.2684 21.6637 25 19.8973 25 18.0556V6.94444C25 5.10266 24.2684 3.33632 22.966 2.03398C21.6637 0.731645 19.8973 0 18.0556 0ZM22.2222 18.0556C22.2222 19.1606 21.7832 20.2204 21.0018 21.0018C20.2204 21.7832 19.1606 22.2222 18.0556 22.2222H6.94444C5.83938 22.2222 4.77957 21.7832 3.99817 21.0018C3.21676 20.2204 2.77778 19.1606 2.77778 18.0556V6.94444C2.77778 5.83938 3.21676 4.77957 3.99817 3.99817C4.77957 3.21676 5.83938 2.77778 6.94444 2.77778H18.0556C19.1606 2.77778 20.2204 3.21676 21.0018 3.99817C21.7832 4.77957 22.2222 5.83938 22.2222 6.94444V18.0556ZM20.3704 6.48148C20.3704 6.84774 20.2618 7.20578 20.0583 7.51031C19.8548 7.81485 19.5656 8.05221 19.2272 8.19237C18.8888 8.33253 18.5165 8.3692 18.1572 8.29775C17.798 8.2263 17.468 8.04992 17.2091 7.79094C16.9501 7.53195 16.7737 7.20198 16.7022 6.84276C16.6308 6.48354 16.6675 6.11119 16.8076 5.77281C16.9478 5.43443 17.1851 5.14521 17.4897 4.94172C17.7942 4.73824 18.1523 4.62963 18.5185 4.62963C19.0097 4.62963 19.4807 4.82474 19.828 5.17202C20.1753 5.51931 20.3704 5.99034 20.3704 6.48148Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href=""
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.93664e-07 12.4965C0.000746419 9.81144 0.866079 7.19796 2.46789 5.043C4.0697 2.88804 6.32285 1.30614 8.89376 0.531497C11.4647 -0.243146 14.2167 -0.169356 16.7424 0.741942C19.2681 1.65324 21.4333 3.35361 22.9173 5.59131C24.4013 7.82901 25.1254 10.4851 24.9822 13.1664C24.8391 15.8476 23.8364 18.4115 22.1225 20.4785C20.4087 22.5455 18.0748 24.0057 15.4664 24.6429C12.8581 25.2801 10.1138 25.0605 7.64 24.0165L10.825 16.7382C11.2283 17.2356 11.7377 17.6366 12.3158 17.912C12.8939 18.1874 13.5263 18.3301 14.1667 18.3299C15.7138 18.3299 17.1975 17.7153 18.2915 16.6213C19.3854 15.5274 20 14.0436 20 12.4965V11.6632C20 9.89508 19.2976 8.19939 18.0474 6.94915C16.7971 5.69891 15.1014 4.99653 13.3333 4.99653H11.6667C9.89856 4.99653 8.20286 5.69891 6.95262 6.94915C5.70238 8.19939 5 9.89508 5 11.6632V12.4965C5 13.9899 5.56167 15.3549 6.485 16.3849L7.72667 15.2749C7.04213 14.5116 6.66452 13.5218 6.66667 12.4965V11.6632C6.66667 10.3371 7.19345 9.06534 8.13113 8.12766C9.06881 7.18998 10.3406 6.66319 11.6667 6.66319H13.3333C14.6594 6.66319 15.9312 7.18998 16.8689 8.12766C17.8065 9.06534 18.3333 10.3371 18.3333 11.6632V12.4965C18.3333 13.6016 17.8943 14.6614 17.1129 15.4428C16.3315 16.2242 15.2717 16.6632 14.1667 16.6632C13.6135 16.6635 13.0744 16.4896 12.6256 16.1662C12.1769 15.8428 11.8414 15.3863 11.6667 14.8615L11.6583 14.8349L13.2633 11.1632L11.7367 10.4965L6.15 23.2632C4.2765 22.159 2.72367 20.585 1.64505 18.6967C0.56643 16.8083 -0.000610761 14.6712 4.93664e-07 12.4965Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href=""
+            ><svg
+              width="32"
+              height="20"
+              viewBox="0 0 32 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5359 3.90313C31.25 6.6875 31.25 12.5 31.25 12.5C31.25 12.5 31.25 18.3125 30.5359 21.0969C30.1391 22.6359 28.9781 23.8469 27.5078 24.2563C24.8375 25 15.625 25 15.625 25C15.625 25 6.41719 25 3.74219 24.2563C2.26562 23.8406 1.10625 22.6313 0.714063 21.0969C4.65661e-08 18.3125 0 12.5 0 12.5C0 12.5 4.65661e-08 6.6875 0.714063 3.90313C1.11094 2.36406 2.27187 1.15312 3.74219 0.74375C6.41719 -2.79397e-07 15.625 0 15.625 0C15.625 0 24.8375 -2.79397e-07 27.5078 0.74375C28.9844 1.15937 30.1437 2.36875 30.5359 3.90313ZM12.5 17.9688L21.875 12.5L12.5 7.03125V17.9688Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href=""
+            ><svg
+              width="25"
+              height="20"
+              viewBox="0 0 25 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.1514 0.000175844H1.84859C1.60913 -0.00314989 1.37135 0.0407285 1.14885 0.129305C0.926346 0.217882 0.72347 0.349422 0.551808 0.516413C0.380145 0.683404 0.24306 0.882576 0.14838 1.10255C0.0537002 1.32253 0.00328017 1.559 0 1.79847V23.3528C0.00328017 23.5923 0.0537002 23.8287 0.14838 24.0487C0.24306 24.2687 0.380145 24.4679 0.551808 24.6348C0.72347 24.8018 0.926346 24.9334 1.14885 25.0219C1.37135 25.1105 1.60913 25.1544 1.84859 25.1511H23.1514C23.3909 25.1544 23.6286 25.1105 23.8511 25.0219C24.0737 24.9334 24.2765 24.8018 24.4482 24.6348C24.6199 24.4679 24.7569 24.2687 24.8516 24.0487C24.9463 23.8287 24.9967 23.5923 25 23.3528V1.79847C24.9967 1.559 24.9463 1.32253 24.8516 1.10255C24.7569 0.882576 24.6199 0.683404 24.4482 0.516413C24.2765 0.349422 24.0737 0.217882 23.8511 0.129305C23.6286 0.0407285 23.3909 -0.00314989 23.1514 0.000175844ZM7.583 21.0515H3.81036V9.73358H7.583V21.0515ZM5.69668 8.14907C5.17639 8.14907 4.6774 7.94238 4.3095 7.57448C3.9416 7.20658 3.73491 6.70759 3.73491 6.1873C3.73491 5.667 3.9416 5.16802 4.3095 4.80012C4.6774 4.43221 5.17639 4.22553 5.69668 4.22553C5.97296 4.1942 6.25274 4.22157 6.5177 4.30586C6.78266 4.39016 7.02683 4.52946 7.23423 4.71466C7.44162 4.89987 7.60755 5.12678 7.72117 5.38056C7.83478 5.63434 7.89351 5.90925 7.89351 6.1873C7.89351 6.46535 7.83478 6.74026 7.72117 6.99404C7.60755 7.24781 7.44162 7.47473 7.23423 7.65993C7.02683 7.84513 6.78266 7.98444 6.5177 8.06873C6.25274 8.15303 5.97296 8.1804 5.69668 8.14907ZM21.1896 21.0515H17.417V14.9775C17.417 13.4559 16.8763 12.4624 15.5055 12.4624C15.0813 12.4656 14.6682 12.5986 14.322 12.8437C13.9757 13.0888 13.7129 13.4341 13.5689 13.8332C13.4705 14.1287 13.4279 14.44 13.4432 14.7512V21.0389H9.67052V9.721H13.4432V11.3181C13.7859 10.7234 14.2843 10.2335 14.8849 9.90108C15.4854 9.56869 16.1652 9.40643 16.8511 9.43176C19.3662 9.43176 21.1896 11.054 21.1896 14.5374V21.0515Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu">
+      <div class="header_menu">
+        <a class="logo" href="">
+          <img src="../assets/images/logo-menu.png" alt="The Led" />
+        </a>
+
+        <button class="close">X</button>
+      </div>
+
+      <ul class="items_menu">
+        <li><a href="productos/">productos</a></li>
+        <li><a href="servicios/">servicios</a></li>
+        <li><a href="cases/">cases</a></li>
+        <li><a href="mailto:contato@">contacto</a></li>
+      </ul>
+    </nav>
+
+    <main class="banner">
+      <video
+        src="../assets/videos/THE-LED-Infinitas-Possibilidades.mp4"
+        loop
+        muted
+        autoplay
+      ></video>
+    </main>
+
+    <section class="about">
+      <div class="container">
+        <p>
+          We are a visual and digital communication company, specialized in
+          solutions for led panels. Our headquarters are in Brazil, but you can
+          find us in Europe, the USA, China and South America. <br />
+          Newness has been part of our DNA in these 12 years of history. We are
+          ready to understand your business’ challenges, making them
+          opportunities for your growth.
+        </p>
+      </div>
+    </section>
+
+    <section class="callservice">
+      <div class="area-servicec">
+        <p>
+          From project development to content management, we offer you complete
+          and exclusive service packs, with implementation, support and
+          applicability in several wholesale segments, dooh, education,
+          broadcast and residential segments.
+        </p>
+
+        <a href="services.html" class="call branco"
+          ><svg
+            width="21"
+            height="24"
+            viewBox="0 0 21 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_3109_2)">
+              <path
+                d="M14.716 10.1251H0.5625C0.251859 10.1251 0 10.377 0 10.6876V13.3126C0 13.6232 0.251859 13.8751 0.5625 13.8751H14.716V16.0341C14.716 17.0364 15.9277 17.5383 16.6365 16.8296L20.6705 12.7956C21.1099 12.3563 21.1099 11.644 20.6705 11.2046L16.6365 7.17062C15.9278 6.46192 14.716 6.96386 14.716 7.96614V10.1251Z"
+                fill="#ffff"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_3109_2">
+                <rect width="21" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          Get to know more about our services.
+        </a>
+      </div>
+    </section>
+
+    <section class="callproducts">
+      <img
+        data-src="../assets/images/telas-produtos-home.webp"
+        class="bg-prod lazyload"
+        alt="led"
+      />
+      <div class="retang"></div>
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                data-src="../assets/images/01.webp"
+                class="lazyload"
+                alt="product"
+              />
+              <h2 class="nomeprod">TheWall</h2>
+            </div>
+            <div class="swiper-slide">
+              <img
+                data-src="../assets/images/2.webp"
+                alt="product"
+                class="lazyload"
+              />
+              <h2 class="nomeprod">TheWall</h2>
+            </div>
+            <div class="swiper-slide">
+              <img
+                data-src="../assets/images/03.webp"
+                alt="product"
+                class="lazyload"
+              />
+              <h2 class="nomeprod">TheWall</h2>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                data-src="../assets/images/01.webp"
+                class="lazyload"
+                alt="product"
+              />
+              <h2 class="nomeprod">TheWall</h2>
+            </div>
+            <div class="swiper-slide">
+              <img
+                data-src="../assets/images/2.webp"
+                class="lazyload"
+                alt="product"
+              />
+              <h2 class="nomeprod">TheWall</h2>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="lazyload"
+                data-src="../assets/images/03.webp"
+                alt="product"
+              />
+              <h2 class="nomeprod">TheWall</h2>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="prod_call">
+      <div class="container">
+        <a href="products.html" class="call"
+          ><svg
+            width="21"
+            height="24"
+            viewBox="0 0 21 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_3109_2)">
+              <path
+                d="M14.716 10.1251H0.5625C0.251859 10.1251 0 10.377 0 10.6876V13.3126C0 13.6232 0.251859 13.8751 0.5625 13.8751H14.716V16.0341C14.716 17.0364 15.9277 17.5383 16.6365 16.8296L20.6705 12.7956C21.1099 12.3563 21.1099 11.644 20.6705 11.2046L16.6365 7.17062C15.9278 6.46192 14.716 6.96386 14.716 7.96614V10.1251Z"
+                fill="#CF6454"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_3109_2">
+                <rect width="21" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          GET TO KNOW OUR PRODUCT LINE
+        </a>
+      </div>
+    </div>
+
+    <section class="callcases">
+      <div class="container">
+        <div class="casescontent">
+          <h2>CHECK OUT SOME OF OUR CLIENTS’ SUCCESS</h2>
+          <div class="swiper svid">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <video
+                  controls
+                  autoplay
+                  loop
+                  muted
+                  src="../assets/videos/NBA_V2910_TEASER_ALTACOMLOGOv2910.mp4"
+                ></video>
+              </div>
+              <div class="swiper-slide">
+                <video
+                  controls
+                  autoplay
+                  loop
+                  muted
+                  src="../assets/videos/THE-LED-Infinitas-Possibilidades.mp4"
+                ></video>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <a href="products.html" class="call"
+          ><svg
+            width="21"
+            height="24"
+            viewBox="0 0 21 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_3109_2)">
+              <path
+                d="M14.716 10.1251H0.5625C0.251859 10.1251 0 10.377 0 10.6876V13.3126C0 13.6232 0.251859 13.8751 0.5625 13.8751H14.716V16.0341C14.716 17.0364 15.9277 17.5383 16.6365 16.8296L20.6705 12.7956C21.1099 12.3563 21.1099 11.644 20.6705 11.2046L16.6365 7.17062C15.9278 6.46192 14.716 6.96386 14.716 7.96614V10.1251Z"
+                fill="#CF6454"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_3109_2">
+                <rect width="21" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          FIGURE OTHER CASES OUT
+        </a>
+      </div>
+    </section>
+
+    <section class="callclients">
+      <img class="mcase" src="../assets/images/moldura-cases.png" alt="" />
+      <div class="container">
+        <h2 class="title">Clients</h2>
+
+        <div class="swiper scli">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/clients/LOGO_GLOBO.webp" alt="Globo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/clients/LOGO_AUDI.webp" alt="Audi" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/clients/LOGO_FORD.webp" alt="Ford" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_UNILEVER.webp"
+                alt="Unilever"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_TOYOTA.webp"
+                alt="Toyota"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_GOOGLE.webp"
+                alt="Google"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_IPIRANGA.webp"
+                alt="Ipiranga "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_PEUGEOT.webp"
+                alt="Peugeot"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_RIACHUELO.webp"
+                alt="Riachuelo"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_NESTLE.webp"
+                alt="Nestle "
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_KALLAS.webp"
+                alt="Kallas "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_NEOOH.webp"
+                alt="Neooh "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_LEVIS.webp"
+                alt="Levis "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/clients/LOGO_SAP.webp" alt="Sap " />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/images/clients/LOGO_HERING.webp"
+                alt="Hering "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/clients/LOGO_IBM.webp" alt="IBM " />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/clients/LOGO_DELL.webp" alt="Dell " />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/clients/LOGO_CeA.webp" alt="cea " />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="opinions">
+      <img
+        data-src="../assets/images/moldura-opinioes.png"
+        alt="moudura"
+        class="mold lazyload"
+      />
+      <h2 class="tl_op">HAVE A LOOK AT SOME OF OUR CLIENTS SUCCESS’ CASES:</h2>
+
+      <div class="container">
+        <h2>HAVE A LOOK AT SOME OF OUR CLIENTS SUCCESS’ CASES:</h2>
+
+        <div class="swiper commmetns">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>
+                “We decided to get a led panel due its technology, innovation
+                and sustainability. We had chosen a TheLED Panel because it’s a
+                led’s market benchmark. This partnership led us to great results
+                in all its stages: negotiation, service, installation and
+                maintenance.”
+              </p>
+
+              <h3 class="name">Elessandro Lemos</h3>
+              <h4 class="office">Natural da Terra Manager</h4>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                “We have the Digital Signage Solution of The Led Group in our
+                shop’s facade. The elements applied there call the client’s
+                attention even though they are distant”
+              </p>
+
+              <h3 class="name">Julio Tanako</h3>
+              <h4 class="office">CEO KT Retailing</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                “As soon as we opened our new store, we had a fascinating
+                surprise. Our customers and collaborators were dazzled about the
+                new features of our shop. The cashier area with two stunning
+                panels provided a brilliant entrance”
+              </p>
+
+              <h3 class="name">Lisete Gomes</h3>
+              <h4 class="office">Riachuelo Manager</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                “The store is amazing! The facade is fantastically flashy. The
+                TheLED panels bring all the technological background to the
+                future concept we need in Riachuelo”
+              </p>
+
+              <h3 class="name">Stephanie Monteiro</h3>
+              <h4 class="office">Riachuelo Manager</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                “Since the installation of the panels in our showcases, the
+                feedback from our teams and costumers has been being brilliant!
+                The moving image is such an attractive feature that enthuses the
+                eyes, which naturally attracts the people. Our teams are so
+                excited that they do not want us to take the led panels out
+                anymore.”
+              </p>
+
+              <h3 class="name">Ariela Silva</h3>
+              <h4 class="office">
+                Visual Merchandasing Manager of Levis Morumbi Store
+              </h4>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                “Nowadays, customers behave in a differente way when shopping. 5
+                years ago, for example, the customer used to come 5 times to the
+                showroom before closing a deal. Now, they come just once. The
+                digitalization has the crucial role of giving more concentrated
+                information in a short period of time.”
+              </p>
+
+              <h3 class="name">Roberto Gaspareti</h3>
+              <h4 class="office">Mercedes-Benz Development Senior Manager</h4>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="institution">
+      <div class="container">
+        <video
+          src="../assets/videos/NBA_V2910_TEASER_ALTACOMLOGOv2910.mp4"
+          controls
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+
+    <footer>
+      <h2 class="container">NOSSOS ESCRITÓRIOS</h2>
+      <div class="container">
+        <h2 class="fdesk">NOSSOS ESCRITÓRIOS</h2>
+        <div class="locals">
+          <div class="local">
+            <h2>Brasil</h2>
+
+            <div class="state">
+              <img src="../assets/images/local.webp" alt="local" />
+
+              <div>
+                <h3>São Paulo</h3>
+                <p>
+                  Rua Florianópolis, 201 <br />
+                  Parque da Mooca - CEP 03185-050
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="local portugal">
+            <h2>Portugal</h2>
+
+            <div class="pst">
+              <div class="state">
+                <img src="../assets/images/local.webp" alt="local" />
+
+                <div>
+                  <h3>Porto</h3>
+                  <p>
+                    Rua Eduardo Santos Silva, 261 <br />Fracção J1 - CEP
+                    4200-283
+                  </p>
+                </div>
+              </div>
+
+              <div class="state">
+                <img src="../assets/images/local.webp" alt="local" />
+
+                <div>
+                  <h3>Lisboa</h3>
+                  <p>
+                    Rua Calvet de Magalhães, 242 <br />
+                    Paço de Arcos - CEP 2772-022
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="local">
+            <h2>EUA</h2>
+
+            <div class="state">
+              <img src="../assets/images/local.webp" alt="local" />
+
+              <div>
+                <h3>Orlando</h3>
+                <p>
+                  400 Wintree Ln <br />
+                  Winter Garden - FL 34787
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arealogo">
+          <img src="../assets/images/logofooter.webp" alt="The Led" />
+        </div>
+      </div>
+    </footer>
+
+    <script async src="../assets/js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="../assets/js/slides.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          "@1.00": {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+
+      var swiper2 = new Swiper(".svid", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper3 = new Swiper(".scli", {
+        slidesPerView: 4,
+
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          "@1.00": {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            grid: {
+              rows: 2,
+            },
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 25,
+            grid: {
+              rows: 2,
+            },
+          },
+        },
+      });
+
+      var swiper4 = new Swiper(".commmetns", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
